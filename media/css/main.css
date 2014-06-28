@@ -4,9 +4,8 @@ html,body{width:100%;height:100%;}
 body{
 	min-width:960px;
 	position:relative;
-	background:#FFF url(/media/img/bg.jpg) no-repeat 0 0;
 	background-size:100% 100%;
-	background-attachment:fixed;
+	background: #FFF url(/media/img/bg.jpg) no-repeat fixed 0 0;
 	font:12px/18px Arial,Tahoma,Geneva,sans-serif;
 	color:#474747;
 }
@@ -128,10 +127,8 @@ a:hover{text-decoration:underline}
 	height:140px;
 	
 	border-radius:10px 10px 10px 10px;
-	
-	background-color:transparent;
 
-	background: linear-gradient(to bottom,rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+	background: transparent linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 
 	transform:skewX(-40deg);
 	/*-webkit-transform:skewX(-40deg);*/
@@ -145,6 +142,7 @@ a:hover{text-decoration:underline}
 	width:1155px;
 	height:182px;
 	position:absolute;
+	background:#FFF url(/media/img/grass.png) no-repeat fixed 0 0;
 	left:-97px;
 	margin-top:-120px;
 	z-index:5;
@@ -167,7 +165,7 @@ a:hover{text-decoration:underline}
 	height:19px;
 	line-height:19px;
 	padding-bottom:15px;
-	font-family:"Corbel",Arial,Sans;
+	font-family:"Corbel",Arial,Sans,serif;
 	font-size:18px;
 	font-weight:normal;
 	text-shadow:1px 1px 2px #000;
