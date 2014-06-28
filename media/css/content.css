@@ -1,0 +1,36 @@
+/* HOMEPAGE CSS */
+#homepage{
+	display:block;
+	width:98%;
+	height:100%;
+	padding:15px;
+	position:relative;
+	z-index:100;
+}
+#homepage h2{
+	padding-bottom:10px;
+	opacity:1;
+}
+#homepage p{
+	padding-bottom:10px;
+	opacity:1;
+}
+
+
+
+
+/* GAME CSS */
+
+#gamehl{
+	display:block;
+	width:660px;
+	padding-top:60px;
+	padding-left:156px;
+	
+}
+#game{
+	display:block;
+	width:650px;
+	height:500px;
+	border:2px solid #FFF;
+}
