@@ -133,7 +133,7 @@ a:hover{text-decoration:underline}
 	transform:skewX(-40deg);
 	/*-webkit-transform:skewX(-40deg);*/
 	position:absolute;
-	left:-55px;
+	left:-50px;
 	z-index:4;
 }
 
@@ -144,7 +144,7 @@ a:hover{text-decoration:underline}
 	position:absolute;
 	left:-97px;
 	margin-top:-120px;
-	background:transparent url(/media/img/grass.png) no-repeat 0 0px;
+	background:transparent url(/media/img/grass.png) no-repeat 0 0;
 	z-index:5;
 }
 
@@ -165,7 +165,7 @@ a:hover{text-decoration:underline}
 	height:19px;
 	line-height:19px;
 	padding-bottom:15px;
-	font-family:"Corbel",Arial,Sans;
+	font-family:"Corbel",Arial,Sans,serif;
 	font-size:18px;
 	font-weight:normal;
 	text-shadow:1px 1px 2px #000;
