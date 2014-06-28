@@ -1,32 +1,50 @@
+whereWeAre='home';
+
 $(document).ready(function(){
 	
 	contentController();
-	getContent('home');
 
+	var loc=top.location.href;
+	var locArr=loc.split("/");
+	var len=locArr.length;
+
+	if(len > 3){
+		var page=locArr[(len - 1)];
+		if(page.length > 2){
+			if(page == 'game')whereWeAre='game';
+			if(page == 'about')whereWeAre='about';
+		}
+	}
+
+	$.each($('.contentlnk'),function(){
+		var attr=$(this).attr('data-page');
+		if(attr != 'home' && attr == whereWeAre)$(this).addClass("sel");
+	});
+
+	getContent(whereWeAre);
 });
 
 function contentController(){
-	
+
 	$('.contentlnk').click(function(){
-		
+
 		$('.contentlnk').removeClass("sel");
 		$(this).addClass("sel");
 		
-		page=$(this).attr('data-page');
-		title=$(this).attr('data-title');
-		href=$(this).attr('href');
+		var page=$(this).attr('data-page');
+		var title=$(this).attr('data-title');
+		var href=$(this).attr('href');
 		window.history.pushState(page,title,href);
 		
 		getContent(page);
 			
 		return false;
 	});
-	
-	
-	
+
 }
 
 function getContent(page){
+
 	$.ajax({
 		type:"GET",
 		url:'http://'+window.location.hostname+'/contents/'+page+'.html',
