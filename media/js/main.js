@@ -11,7 +11,6 @@ $(document).ready(function(){
 	if(len > 3){
 		var page=locArr[(len - 1)];
 		if(page.length > 2){
-			if(page == 'game')whereWeAre='game';
 			if(page == 'about')whereWeAre='about';
 		}
 	}
