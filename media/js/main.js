@@ -7,10 +7,10 @@ $(document).ready(function(){
 	var loc=top.location.href;
 	var locArr=loc.split("/");
 	var len=locArr.length;
-
 	if(len > 3){
 		var page=locArr[(len - 1)];
 		if(page.length > 2){
+			if(page == 'jokes')whereWeAre='jokes';
 			if(page == 'about')whereWeAre='about';
 		}
 	}
@@ -33,10 +33,17 @@ function contentController(){
 		var page=$(this).attr('data-page');
 		var title=$(this).attr('data-title');
 		var href=$(this).attr('href');
-		window.history.pushState(page,title,href);
 		
 		getContent(page);
-			
+		
+		if(page=='jokes')
+		{
+			$('html').css('height','auto');
+		}
+		else
+		{
+			$('html').css('height','100%');
+		}
 		return false;
 	});
 
@@ -46,7 +53,7 @@ function getContent(page){
 
 	$.ajax({
 		type:"GET",
-		url:'http://'+window.location.hostname+'/contents/'+page+'.html',
+		url:'http://'+window.location.hostname+'/sandbox/contents/'+page+'.html',
 		success:function(data){
 			$('#contentin').html(data);
 		}

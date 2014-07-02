@@ -4,7 +4,7 @@ html,body{width:100%;height:100%;}
 body{
 	min-width:960px;
 	position:relative;
-	background:#FFF url(/media/img/bg.jpg) no-repeat 0 0;
+	background:#FFF url(../img/bg.jpg) no-repeat 0 0;
 	background-size:100% 100%;
 	background-attachment:fixed;
 	font:12px/18px Arial,Tahoma,Geneva,sans-serif;
@@ -38,7 +38,7 @@ a:hover{text-decoration:underline}
 	width:189px;
 	height:105px;
 	margin:0 50%;
-	background:transparent url(/media/img/logo.png) no-repeat center bottom;
+	background:transparent url(../img/logo.png) no-repeat center bottom;
 	float:none;
 	position:absolute;
 	bottom:0;
@@ -47,10 +47,9 @@ a:hover{text-decoration:underline}
 
 /* ********************** MENU ***************************** */
 #menu{
-	width:800px;
+	width:960px;
 	min-height:62px;
 	padding-bottom:40px;
-	padding-left:80px;
 	text-align:center;
 }
 #menu ul{
@@ -69,10 +68,10 @@ a:hover{text-decoration:underline}
 	float:left;
 }
 #menu ul li.spacer.left{
-	background:transparent url(/media/img/sprite.png) no-repeat right 0;
+	background:transparent url(../img/sprite.png) no-repeat right 0;
 }
 #menu ul li.spacer.right{
-	background:transparent url(/media/img/sprite.png) no-repeat left 0;
+	background:transparent url(../img/sprite.png) no-repeat left 0;
 }
 
 #menu ul li a{
@@ -81,7 +80,7 @@ a:hover{text-decoration:underline}
 	height:60px;
 	line-height:inherit;
 	color:#8CC1C6;
-	background:transparent url(/media/img/sprite.png?v=2) no-repeat 0 -78px;
+	background:transparent url(../img/sprite.png?v=2) no-repeat 0 -78px;
 	border:1px solid #FFF;
 	border-left:0;
 	font-family:"Showcard Gothic","Conv_SHOWG",Arial,Verdana,Sans;
@@ -145,7 +144,7 @@ a:hover{text-decoration:underline}
 	position:absolute;
 	left:-97px;
 	margin-top:-120px;
-	background:transparent url(/media/img/grass.png) no-repeat 0 0;
+	background:transparent url(../img/grass.png) no-repeat 0 0;
 	z-index:5;
 }
 
@@ -189,11 +188,25 @@ a:hover{text-decoration:underline}
 	display:inline-block;
 	width:82px;
 	height:17px;
-	background:transparent url(/media/img/sprite.png) no-repeat 0 -180px;
+	background:transparent url(../img/sprite.png) no-repeat 0 -180px;
 }
 #validated #html5validated{
 	display:inline-block;
 	width:82px;
 	height:17px;
-	background:transparent url(/media/img/sprite.png) no-repeat 0 -240px;
+	background:transparent url(../img/sprite.png) no-repeat 0 -240px;
+}
+#jokes p,.big{
+	padding: 50px;
+}
+#jokes{
+	background-color: white;
+}
+#content{
+	background-color: white;
+}
+.big {
+	font-size: 30px;
+	font-family: "Brush Script MT", cursive;
+	line-height: 2;
 }

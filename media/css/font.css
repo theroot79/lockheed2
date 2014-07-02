@@ -1,7 +1,7 @@
 @font-face {
 	font-family:'Conv_SHOWG';
-	src:url('/media/fonts/SHOWG.eot');
-	src:local('☺'), url('/media/fonts/SHOWG.woff') format('woff'),url('/media/fonts/SHOWG.ttf') format('truetype'),url('/media/fonts/SHOWG.svg') format('svg');
+	src:url('../fonts/SHOWG.eot');
+	src:local('☺'), url('../fonts/SHOWG.woff') format('woff'),url('../fonts/SHOWG.ttf') format('truetype'),url('../fonts/SHOWG.svg') format('svg');
 	font-weight:normal;
 	font-style:normal;
 }
